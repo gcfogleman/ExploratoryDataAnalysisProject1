@@ -9,7 +9,7 @@ HWdataSub2 <- HWdata[HWdata$Date == "2/2/2007",]
 ## This is the dataframe that contains data to be plotted
 HWdataSub <- rbind(HWdataSub1, HWdataSub2)
 
-## create png file and save histogram to that file:
+## create png file and save plot to that file:
 png(file = "plot2.png")
 ## default is 480 pixels by 480 pixels
 plot(as.numeric(HWdataSub$Global_active_power), ylab = "Global Active Power (kilowatts)", type = "l")
